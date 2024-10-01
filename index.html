@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Rosa Cafe</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <nav class="bg-black bg-opacity-75 shadow-lg fixed w-full z-10">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+       
+        <div class="text-3xl font-bold text-white">
+          <a href="#home">La Rosa</a>
+        </div>
+        
+        <div class="block md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Navigation Links -->
+        <div class="hidden md:flex">
+          <a href="#home" class="text-lg mx-4 text-white hover:text-gray-300">Home</a>
+          <a href="#about" class="text-lg mx-4 text-white hover:text-gray-300">About</a>
+          <a href="#menu" class="text-lg mx-4 text-white hover:text-gray-300">Menu</a>
+          <a href="#contact" class="text-lg mx-4 text-white hover:text-gray-300">Contact</a>
+        </div>
+      </div>
+      
+      <div id="mobile-menu" class="hidden md:hidden">
+        <a href="#home" class="block text-lg py-2 text-white hover:text-gray-300">Home</a>
+        <a href="#about" class="block text-lg py-2 text-white hover:text-gray-300">About</a>
+        <a href="#menu" class="block text-lg py-2 text-white hover:text-gray-300">Menu</a>
+        <a href="#contact" class="block text-lg py-2 text-white hover:text-gray-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('cafe.jpg');">
+    <div class="text-center text-white bg-black bg-opacity-50 p-10 rounded">
+      <h1 class="text-6xl font-bold">Welcome to La Rosa</h1>
+      <p class="mt-4 text-xl">The best place to enjoy your coffee</p>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-10">About Us</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+          <img src="about.webp" alt="Cafe Image" class="rounded-lg shadow-lg">
+        </div>
+        <div class="md:w-1/2 md:pl-10 mt-10 md:mt-0">
+          <p class="text-lg">Our cafe offers a cozy atmosphere, friendly staff, and a variety of delicious beverages and pastries. We believe in quality and comfort, making sure every visit is a pleasant experience.</p>
+          <p class="text-lg mt-4">Since our opening in 2010, we have been dedicated to serving the finest coffee sourced from the best farms around the world. Our baristas are skilled artisans who take pride in every cup they prepare.</p>
+          <p class="text-lg mt-4">We also offer a range of freshly baked goods, including croissants, muffins, and cookies, all made daily in-house. Our goal is to create a community space where people can relax, connect, and enjoy exceptional food and drink.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="py-20 bg-gray-200">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-10">Our Menu</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+       
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="espresso.webp" alt="Espresso" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-2">Espresso</h3>
+          <p class="text-lg">Rich and creamy espresso, perfect for any time of the day.</p>
+          <p class="mt-4 text-xl font-bold">$3.50</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="latte.webp" alt="Latte" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-2">Latte</h3>
+          <p class="text-lg">Smooth and velvety latte, a perfect blend of milk and coffee.</p>
+          <p class="mt-4 text-xl font-bold">$4.00</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="cappucino.jpg" alt="Cappuccino" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-2">Cappuccino</h3>
+          <p class="text-lg">Classic cappuccino with a frothy top, ideal for coffee lovers.</p>
+          <p class="mt-4 text-xl font-bold">$4.00</p>
+        </div>
+       
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="mocha.webp" alt="Mocha" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-2">Mocha</h3>
+          <p class="text-lg">A delightful mix of coffee and chocolate, topped with whipped cream.</p>
+          <p class="mt-4 text-xl font-bold">$4.50</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="americano.jpg" alt="Americano" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-2">Americano</h3>
+          <p class="text-lg">A strong and smooth coffee made by diluting espresso with hot water.</p>
+          <p class="mt-4 text-xl font-bold">$3.00</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="pastries.jpg" alt="Pastries" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-2">Pastries</h3>
+          <p class="text-lg">A variety of freshly baked pastries, including croissants, muffins, and cookies.</p>
+          <p class="mt-4 text-xl font-bold">$2.00 - $4.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-10">Contact Us</h2>
+      <div class="max-w-xl mx-auto">
+        <form action="#" method="POST" class="bg-white p-8 rounded-lg shadow-lg">
+          <div class="mb-4">
+            <label for="name" class="block text-lg font-bold mb-2">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brown-500" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-lg font-bold mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brown-500" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-lg font-bold mb-2">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brown-500" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-brown-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-brown-600">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      &copy; 2024 Cafe. All rights reserved.
+    </div>
+  </footer>
+
+  <style>
+    .bg-brown-500 {
+      background-color: #8B4513;
+    }
+    .hover\:bg-brown-600:hover {
+      background-color: #7A3B12;
+    }
+  </style>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
